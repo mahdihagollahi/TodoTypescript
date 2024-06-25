@@ -1,11 +1,12 @@
 import React from "react"
+import Todos from "./Componnent/Todos"
 
 type array = number[]
 type array2 = string[]
 type array4 = (number | String)[]
 type user3 = {name:number ,age:string}
 
-function hi (a:number , b: number){
+function hi (a:number , b: number):number{
   return a + b
 }
 
@@ -27,6 +28,7 @@ age:'daf',
   return (
     <div>App
       <h2>{hi(1,1)}</h2>
+      <Todos age={12} hasChiled={true} name="mahdi" />
     </div>
   )
 }
