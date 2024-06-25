@@ -5,6 +5,10 @@ type array2 = string[]
 type array4 = (number | String)[]
 type user3 = {name:number ,age:string}
 
+function hi (a:number , b: number){
+  return a + b
+}
+
 function App() {
 
 let array : array = [1,2,3,4,5,]
@@ -21,7 +25,9 @@ age:'daf',
 }
 
   return (
-    <div>App</div>
+    <div>App
+      <h2>{hi(1,1)}</h2>
+    </div>
   )
 }
 
