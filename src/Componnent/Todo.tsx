@@ -3,7 +3,13 @@ import EditTodo from './EditTodo';
 import { useDispatch, useSelector } from 'react-redux';
 import { addTodo } from '../Redux/todoslice';
 
-function Todos() {
+type user = {
+  event : string,
+  state : string,
+  Todo : string
+}
+
+function Todos({ event, state }:user) {
   const [newTitle, setNewTitle] = useState("");
   const dispatch = useDispatch(); 
   const todos = useSelector((state) => state.todo.todos); 
