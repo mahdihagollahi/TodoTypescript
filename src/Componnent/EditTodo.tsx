@@ -1,16 +1,20 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { markTodo,deleteTodo , editTodo } from '../Redux/todoslice'
+import { markTodo,deleteTodo , editTodo, Todo  } from '../Redux/todoslice'
+ interface User {
+  todo: Todo;
+
+ }
 
 
-function Todos({todo}) {
+const Todos:React.FC<User> = ({todo}) =>{
     const dispatch = useDispatch()
 
-    const[isEdit , setIsEdit] = useState(false)
+    const[isEdit , setIsEdit] = useState<boolean>(false)
 
-    const[newTitle , setNewTitle] = useState(todo.title)
+    const[newTitle , setNewTitle] = useState<string>(todo.title)
 
-    const handleEdit = (event) => {
+    const handleEdit = (event : React.KeyboardEvent<HTMLInputElement>) => {
       if (event.key === "Enter") {
         dispatch(editTodo({id:todo.id, title:newTitle}));
         setIsEdit(false);
@@ -72,7 +76,7 @@ function Todos({todo}) {
             
             <span className={todo.completed ? 'line-through' : ''} style={{ marginLeft: "8px" }}>{todo.title}</span>
           </div>
-          <div className="flex items-center">
+          <div className="flex gap-3 items-center">
             <button
               className="btn btn-circle btn-outline"
               onClick={() => setIsEdit(true)}
