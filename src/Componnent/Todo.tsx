@@ -2,17 +2,18 @@ import React, { useState } from 'react';
 import EditTodo from './EditTodo';
 import { useDispatch, useSelector } from 'react-redux';
 import { addTodo } from '../Redux/todoslice';
+import { RootState} from '../Redux/store';
 
-type user = {
+interface user  {
   event : string,
   state : string,
-  Todo : string
+ 
 }
 
-function Todos({ event, state }:user) {
-  const [newTitle, setNewTitle] = useState("");
+const Todos:React.FC<user> = ({ event, state }) =>{
+  const [newTitle, setNewTitle] = useState<string>("");
   const dispatch = useDispatch(); 
-  const todos = useSelector((state) => state.todo.todos); 
+  const todos = useSelector((state:RootState) => state.todo.todos); 
 
   const handleAddTodo = () => {
     if (newTitle.trim() !== "") {
@@ -21,7 +22,7 @@ function Todos({ event, state }:user) {
     }
   };
 
-  const handleKeyDown = (event) => { 
+  const handleKeyDown = (event:  React.KeyboardEvent<HTMLInputElement>) => { 
     if (event.key === 'Enter') {
       handleAddTodo();
     }
@@ -61,6 +62,5 @@ function Todos({ event, state }:user) {
 }
 
 export default Todos;
-
 
 
