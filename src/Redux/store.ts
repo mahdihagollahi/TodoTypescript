@@ -3,7 +3,7 @@ import todoslice from './todoslice'
 
  const store = configureStore({
    reducer : {
-    todo : todoslice
+    todo : todoslice 
    }
 });
 export type RootState = ReturnType<typeof store.getState>;
