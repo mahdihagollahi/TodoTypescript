@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+# TodoWithTypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> a to do list with the ability to do, edit and delete
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+![Logo](https://github.com/mahdihagollahi/TodoWithNext/blob/main/src/app/assets/Img/Logo.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+
+## Installation
+
+> First, clone the project
+
+```bash
+  git clone https://github.com/mahdihagollahi/sandoghProject.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+> to run sandoghProject with npm
+
+```bash
+cd TodoWithNext
+  npm install
+  npm run dev
+```
+
+## Screenshots
+
+![App Screenshot](https://github.com/mahdihagollahi/TodoWithNext/blob/main/src/app/assets/Img/Screen%20Light.png)
+
+![Commit Badge](https://github.com/mahdihagollahi/TodoWithNext/blob/main/src/app/assets/Img/Screen%20Dark.png)
+
+![Commit Badge](https://github.com/mahdihagollahi/TodoWithNext/blob/main/src/app/assets/Img/Screen%20Do.png)
+
+## Support
+
+> For support, email haghollahimahdi@gmail.com or join our Slack channel.
+
+## Authors
+
+- [mahdihaghollahi](https://github.com/mahdihagollahi)
