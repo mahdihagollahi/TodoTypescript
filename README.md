@@ -14,13 +14,13 @@
 > First, clone the project
 
 ```bash
-  git clone https://github.com/mahdihagollahi/sandoghProject.git
+ https://github.com/mahdihagollahi/TodoTypescript.git
 ```
 
-> to run sandoghProject with npm
+> to run TodoTypescript with npm
 
 ```bash
-cd TodoWithNext
+cd TodoTypescript
   npm install
   npm run dev
 ```
