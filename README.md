@@ -14,7 +14,7 @@
 > First, clone the project
 
 ```bash
- https://github.com/mahdihagollahi/TodoTypescript.git
+git clone https://github.com/mahdihagollahi/TodoTypescript.git
 ```
 
 > to run TodoTypescript with npm
